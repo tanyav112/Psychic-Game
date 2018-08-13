@@ -14,6 +14,7 @@ let compChoice = compGuess()
 document.onkeyup = function (event) {
   const letter = event.key 
   guessedLetters.push(letter)
+// passes letters guessed to the html page
   document.querySelector('#guesses').innerHTML = guessedLetters.toString()
  
   // is letter guessed same as comp choice? if yes, win; otherwise check to see if guessesLeft >0 if not wrong and goes down by one
